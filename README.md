@@ -11,14 +11,14 @@ With lazy.nvim
 ```lua
 -- init.lua
 {
-    "davidhleibg/hledger.nvim"
+    "dahelb/hledger.nvim"
 }
 
 
 -- plugins/hledger.lua
 return {
     {
-        "davidhelbig/hledger.nvim"
+        "dahelb/hledger.nvim"
     }
 }
 ```
@@ -40,7 +40,7 @@ Optionally, create an autocommand for running checks upon opening and/or after s
 ```lua
 --- plugins/hledger.lua
 return {
-    "davidhelbig/hledger.nvim",
+    "dahelb/hledger.nvim",
     config = function()
         vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePost" }, {
             pattern = { "*.ledger", "*.journal" },
