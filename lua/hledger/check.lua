@@ -118,7 +118,7 @@ end
 M.check = function(opts)
 	opts = opts or {}
 
-	local strict = opts.strict or true
+	local strict = opts.strict or false
 	local additional_checks = opts.additional_checks or {}
 
 	-- Ensure the current buffer is of type 'ledger'
